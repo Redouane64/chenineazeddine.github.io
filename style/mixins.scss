@@ -1,0 +1,204 @@
+@mixin textFormat($titleSize,$lineHeight,$fontSize,$alignment){
+        @font-face{
+    font-family: muli;
+    src:url("../fonts/Muli/Muli-Italic.ttf");
+    font-weight: normal;
+    font-style: italic;
+   
+}
+        @font-face{
+    font-family: muli;
+    src:url("../fonts/Muli/Muli-Light.ttf");
+    font-weight:lighter;
+    font-style: normal;
+
+}
+        @font-face{
+    font-family: muli;   
+    src:url("../fonts/Muli/Muli-LightItalic.ttf");
+    font-weight:lighter;
+    font-style: italic;
+}
+        @font-face{
+    font-family: muli;
+    src:url("../fonts/Muli/Muli-Regular.ttf");
+    font-weight:normal;
+    font-style: normal;
+}
+ 
+    
+    .title{
+        font-family: muli;
+        letter-spacing: 0.5vw ;
+        font-style: normal;
+        font-weight: 800;
+    }
+    #name{
+        font-family: muli;
+        font-weight: lighter;
+        font-style: italic;
+        letter-spacing: 3px ;
+    }
+    .subtitle,em{
+         font-family: muli;
+         font-style: italic ;
+         font-weight: lighter;
+        &.quote{
+         letter-spacing: 3px ;
+          word-spacing: 5px ;
+        }
+    }
+    h1.title{
+            font-size: $titleSize ;
+            width: 100% ;
+            margin: 5vh auto;
+        
+        }
+    p{
+        font-family:muli;
+        letter-spacing: 1px ;
+        word-spacing: 1px ;
+        font-size: $fontSize ;
+        font-style: normal;
+        font-weight: normal ;
+        text-align: #{$alignment};
+        margin: auto ;
+    }
+    span,a{
+        font-family: muli;
+        font-weight: normal;
+       
+    }
+     ::-webkit-input-placeholder,::-webkit-textarea-placeholder{
+                    font-family: muli;
+                     color: #FAFAFA;
+                    opacity: 0.38;
+                   font-size: normal;
+                            }
+    :-moz-placeholder{
+           font-family: muli;
+                     color: #FAFAFA;
+                    opacity: 0.38;   
+    }
+    :-ms-input-placeholder,:-ms-text-placeholder{
+          font-family: muli;
+                     color: #FAFAFA;
+                    opacity: 0.38;
+    }
+    input,textarea{
+        font-family: muli;
+        font-style: normal;
+        letter-spacing: 1px ;
+    }
+
+}
+@mixin mobileDocument($height){
+    header{     
+        width: 100vw;
+        z-index: 5;
+        opacity: 1;
+        height: $height;
+        background-color: rgba(234,242,239,0.8);
+        transition: 0.25s ease-in-out;
+        div#menu{
+          
+            cursor: pointer ;
+            display: block ;
+            position: absolute ; 
+            height: $height*0.75;
+            width: $height*0.75;
+            top: $height*0.2;
+            bottom: 0;
+            left: 10 ;
+             div:nth-child(2){
+                margin: calc($height/5) auto;
+                                        }      
+                    
+        } 
+        ul{
+            text-align: center ;
+            height: auto ;
+            li{
+              color:rgb(234,242,239);
+              padding-bottom: 10px ;
+              transition: linear;
+              @include leftSideIntro(6,0.05,0);
+              
+               
+            }
+        }
+        &.showMenu{
+                height: 100vh ;
+                background-color: rgba(37,48,49,0.984);
+            
+                div#menu{ 
+                    transition: 1s ease-in-out ;
+                    outline: none ;
+                    div{  
+                        background-color: rgb(234,242,239);  
+                        &:nth-child(1){
+                       
+                        transform-origin: bottom right;
+                        transform: rotateZ(-35deg);
+                        }
+                         &:nth-child(2){
+                            animation: 0.2s leftSideIntro reverse forwards; 
+                        }
+                         &:nth-child(3){
+                           transform-origin: top right;
+                           transform: rotateZ(35deg);  
+                        }
+                    }
+                    }
+            }      
+
+    }
+    section{      
+        width: 100vw;
+        margin: 0px ;
+        @include textFormat(6vw,normale,17px,"center");    
+        
+    }
+    footer{
+        width: 100%;
+        margin: 0px ;
+    }
+}
+@mixin skills($skillsType,$skillsnumber,$flex){
+                        @if($flex =="row"){
+                        @for $i from 1 through $skillsType{
+                            &:nth-child(#{$i}){ 
+                                div{
+                            width: 100%/nth($skillsnumber,$i);
+                            }
+                        } 
+                            }
+                        }@else{
+                            div{width: 100%;}
+                        }    
+                }
+@mixin leftSideIntro($itemNumber,$delayTime,$timeOffset){
+   opacity:  0 ; 
+    &.animate{
+        
+    @for $i from 1 through $itemNumber{
+                    &:nth-child(#{$i}){
+                        animation: 1s leftSideIntro ($i*$delayTime) + $timeOffset *1s forwards;
+                    }
+                }
+    }
+
+}
+@mixin textIntro($itemNumber,$delayTime,$timeOffset){
+    opacity:  0 ;
+    &.animate{
+    @for $i from 1 through $itemNumber{
+                    &:nth-child(#{$i}){
+                        animation: 1s textIntro ($i*$delayTime) + $timeOffset *1s forwards;
+                    }
+                }
+    
+}
+   
+                    
+}

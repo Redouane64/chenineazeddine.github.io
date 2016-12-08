@@ -1,0 +1,1036 @@
+@media only screen and (min-device-height: 300px) and (max-device-width: 550px) and (max-device-height: 740px) and (orientation: portrait), only screen and (max-width: 550px) and (max-height: 700px) and (min-height: 300px) {
+  header {
+    width: 100vw;
+    z-index: 5;
+    opacity: 1;
+    height: 10vh;
+    background-color: rgba(234, 242, 239, 0.8);
+    transition: 0.25s ease-in-out;
+  }
+  header div#menu {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    height: 7.5vh;
+    width: 7.5vh;
+    top: 2vh;
+    bottom: 0;
+    left: 10;
+  }
+  header div#menu div:nth-child(2) {
+    margin: calc($height/5) auto;
+  }
+  header ul {
+    text-align: center;
+    height: auto;
+  }
+  header ul li {
+    color: #eaf2ef;
+    padding-bottom: 10px;
+    transition: linear;
+    opacity: 0;
+  }
+  header ul li.animate:nth-child(1) {
+    animation: 1s leftSideIntro 0.05s forwards;
+  }
+  header ul li.animate:nth-child(2) {
+    animation: 1s leftSideIntro 0.1s forwards;
+  }
+  header ul li.animate:nth-child(3) {
+    animation: 1s leftSideIntro 0.15s forwards;
+  }
+  header ul li.animate:nth-child(4) {
+    animation: 1s leftSideIntro 0.2s forwards;
+  }
+  header ul li.animate:nth-child(5) {
+    animation: 1s leftSideIntro 0.25s forwards;
+  }
+  header ul li.animate:nth-child(6) {
+    animation: 1s leftSideIntro 0.3s forwards;
+  }
+  header.showMenu {
+    height: 100vh;
+    background-color: rgba(37, 48, 49, 0.984);
+  }
+  header.showMenu div#menu {
+    transition: 1s ease-in-out;
+    outline: none;
+  }
+  header.showMenu div#menu div {
+    background-color: #eaf2ef;
+  }
+  header.showMenu div#menu div:nth-child(1) {
+    transform-origin: bottom right;
+    transform: rotateZ(-35deg);
+  }
+  header.showMenu div#menu div:nth-child(2) {
+    animation: 0.2s leftSideIntro reverse forwards;
+  }
+  header.showMenu div#menu div:nth-child(3) {
+    transform-origin: top right;
+    transform: rotateZ(35deg);
+  }
+  section {
+    width: 100vw;
+    margin: 0px;
+  }
+  @font-face {
+    section {
+      font-family: muli;
+      src: url("../fonts/Muli/Muli-Italic.ttf");
+      font-weight: normal;
+      font-style: italic;
+    }
+  }
+  @font-face {
+    section {
+      font-family: muli;
+      src: url("../fonts/Muli/Muli-Light.ttf");
+      font-weight: lighter;
+      font-style: normal;
+    }
+  }
+  @font-face {
+    section {
+      font-family: muli;
+      src: url("../fonts/Muli/Muli-LightItalic.ttf");
+      font-weight: lighter;
+      font-style: italic;
+    }
+  }
+  @font-face {
+    section {
+      font-family: muli;
+      src: url("../fonts/Muli/Muli-Regular.ttf");
+      font-weight: normal;
+      font-style: normal;
+    }
+  }
+  section .title {
+    font-family: muli;
+    letter-spacing: 0.5vw;
+    font-style: normal;
+    font-weight: 800;
+  }
+  section #name {
+    font-family: muli;
+    font-weight: lighter;
+    font-style: italic;
+    letter-spacing: 3px;
+  }
+  section .subtitle, section em {
+    font-family: muli;
+    font-style: italic;
+    font-weight: lighter;
+  }
+  section .subtitle.quote, section em.quote {
+    letter-spacing: 3px;
+    word-spacing: 5px;
+  }
+  section h1.title {
+    font-size: 6vw;
+    width: 100%;
+    margin: 5vh auto;
+  }
+  section p {
+    font-family: muli;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    margin: auto;
+  }
+  section span, section a {
+    font-family: muli;
+    font-weight: normal;
+  }
+  section ::-webkit-input-placeholder, section ::-webkit-textarea-placeholder {
+    font-family: muli;
+    color: #FAFAFA;
+    opacity: 0.38;
+    font-size: normal;
+  }
+  section :-moz-placeholder {
+    font-family: muli;
+    color: #FAFAFA;
+    opacity: 0.38;
+  }
+  section :-ms-input-placeholder, section :-ms-text-placeholder {
+    font-family: muli;
+    color: #FAFAFA;
+    opacity: 0.38;
+  }
+  section input, section textarea {
+    font-family: muli;
+    font-style: normal;
+    letter-spacing: 1px;
+  }
+  footer {
+    width: 100%;
+    margin: 0px;
+  }
+  header ul {
+    margin: 25vh auto;
+  }
+  header ul li {
+    margin: 5vh auto;
+  }
+  section article.block#hero {
+    height: 110vh;
+  }
+  section article.block#hero div#profile {
+    height: 85%;
+    overflow: hidden;
+  }
+  section article.block#hero div#profile img {
+    height: 25vh;
+    width: 25vh;
+  }
+  section article.block#hero div#identity {
+    height: 15%;
+  }
+  section article.block#hero div#identity ul {
+    margin: auto;
+    width: 100%;
+  }
+  section article.block#hero div#identity ul li {
+    margin-right: 10px;
+    display: inline-block;
+  }
+  section article.block#hero div#identity ul li svg {
+    height: 35px;
+    width: 35px;
+  }
+  section article.block#shortIntro {
+    flex-direction: column;
+  }
+  section article.block#shortIntro > div {
+    margin: 20px auto;
+  }
+  section article.block#whoAmI div {
+    width: 90%;
+    margin: auto;
+  }
+  section article.block#whoAmI img {
+    width: 50%;
+    height: 30%;
+  }
+  section article.block#webDeveloper div#myWhy {
+    width: 99%;
+  }
+  section article.block#webDeveloper div#myWhy div#imgCon {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+  }
+  section article.block#webDeveloper div#myWhy div#text {
+    width: calc(100%-4px);
+    margin: auto;
+    top: -25px;
+  }
+  section article.block#webDeveloper div#myWhy div#text p {
+    margin: 15% 5% 5% 5%;
+  }
+  section article.block#webDeveloper div#myWhy div#text ul {
+    text-align: center;
+    margin: auto;
+  }
+  section article.block#webDeveloper div#myWhy div#text ul li {
+    flex-direction: column;
+  }
+  section article.block#webDeveloper div#myWhy div#text ul li img {
+    margin: 10px 0;
+  }
+  section article.block#mySkills > div h1.title {
+    margin: 5vh  auto 7vh auto;
+  }
+  section article.block#mySkills > div #skillsList {
+    width: 96%;
+  }
+  section article.block#mySkills > div #skillsList div.devSide {
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+    margin: 15px auto;
+  }
+  section article.block#mySkills > div #skillsList div.devSide div {
+    margin: 15px auto;
+  }
+  section article.block#mySkills > div #skillsList div.devSide div {
+    width: 100%;
+  }
+  section article.block#mySkills img.fadedImage {
+    width: 100%;
+  }
+  section article.block#memberIn #groupes div#gList {
+    width: 99%;
+    flex-direction: column;
+  }
+  section article.block#memberIn #groupes div#gList div {
+    margin: 5% auto;
+    width: 100%;
+    height: 50%;
+  }
+  section article.block#contactMe {
+    height: auto;
+  }
+  section article.block#contactMe div#thanks {
+    font-size: 10vw;
+  }
+  section article.block#contactMe > div:first-child form {
+    width: 95%;
+  }
+  section article.block#contactMe > div:first-child form > div {
+    width: 90%;
+  }
+  section article.block#contactMe > div:first-child form input[type="submit"] {
+    width: 50%;
+  }
+  footer > div {
+    width: 90%;
+  }
+  footer > div div svg {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media only screen and (min-device-height: 300px) and (max-device-width: 700px) and (min-device-width: 530px) and (max-device-height: 700px) and (orientation: portrait), only screen and (max-width: 700px) and (min-width: 530px) and (max-height: 700px) and (min-height: 300px) {
+  header {
+    width: 100vw;
+    z-index: 5;
+    opacity: 1;
+    height: 10vh;
+    background-color: rgba(234, 242, 239, 0.8);
+    transition: 0.25s ease-in-out;
+  }
+  header div#menu {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    height: 7.5vh;
+    width: 7.5vh;
+    top: 2vh;
+    bottom: 0;
+    left: 10;
+  }
+  header div#menu div:nth-child(2) {
+    margin: calc($height/5) auto;
+  }
+  header ul {
+    text-align: center;
+    height: auto;
+  }
+  header ul li {
+    color: #eaf2ef;
+    padding-bottom: 10px;
+    transition: linear;
+    opacity: 0;
+  }
+  header ul li.animate:nth-child(1) {
+    animation: 1s leftSideIntro 0.05s forwards;
+  }
+  header ul li.animate:nth-child(2) {
+    animation: 1s leftSideIntro 0.1s forwards;
+  }
+  header ul li.animate:nth-child(3) {
+    animation: 1s leftSideIntro 0.15s forwards;
+  }
+  header ul li.animate:nth-child(4) {
+    animation: 1s leftSideIntro 0.2s forwards;
+  }
+  header ul li.animate:nth-child(5) {
+    animation: 1s leftSideIntro 0.25s forwards;
+  }
+  header ul li.animate:nth-child(6) {
+    animation: 1s leftSideIntro 0.3s forwards;
+  }
+  header.showMenu {
+    height: 100vh;
+    background-color: rgba(37, 48, 49, 0.984);
+  }
+  header.showMenu div#menu {
+    transition: 1s ease-in-out;
+    outline: none;
+  }
+  header.showMenu div#menu div {
+    background-color: #eaf2ef;
+  }
+  header.showMenu div#menu div:nth-child(1) {
+    transform-origin: bottom right;
+    transform: rotateZ(-35deg);
+  }
+  header.showMenu div#menu div:nth-child(2) {
+    animation: 0.2s leftSideIntro reverse forwards;
+  }
+  header.showMenu div#menu div:nth-child(3) {
+    transform-origin: top right;
+    transform: rotateZ(35deg);
+  }
+  section {
+    width: 100vw;
+    margin: 0px;
+  }
+  @font-face {
+    section {
+      font-family: muli;
+      src: url("../fonts/Muli/Muli-Italic.ttf");
+      font-weight: normal;
+      font-style: italic;
+    }
+  }
+  @font-face {
+    section {
+      font-family: muli;
+      src: url("../fonts/Muli/Muli-Light.ttf");
+      font-weight: lighter;
+      font-style: normal;
+    }
+  }
+  @font-face {
+    section {
+      font-family: muli;
+      src: url("../fonts/Muli/Muli-LightItalic.ttf");
+      font-weight: lighter;
+      font-style: italic;
+    }
+  }
+  @font-face {
+    section {
+      font-family: muli;
+      src: url("../fonts/Muli/Muli-Regular.ttf");
+      font-weight: normal;
+      font-style: normal;
+    }
+  }
+  section .title {
+    font-family: muli;
+    letter-spacing: 0.5vw;
+    font-style: normal;
+    font-weight: 800;
+  }
+  section #name {
+    font-family: muli;
+    font-weight: lighter;
+    font-style: italic;
+    letter-spacing: 3px;
+  }
+  section .subtitle, section em {
+    font-family: muli;
+    font-style: italic;
+    font-weight: lighter;
+  }
+  section .subtitle.quote, section em.quote {
+    letter-spacing: 3px;
+    word-spacing: 5px;
+  }
+  section h1.title {
+    font-size: 6vw;
+    width: 100%;
+    margin: 5vh auto;
+  }
+  section p {
+    font-family: muli;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    margin: auto;
+  }
+  section span, section a {
+    font-family: muli;
+    font-weight: normal;
+  }
+  section ::-webkit-input-placeholder, section ::-webkit-textarea-placeholder {
+    font-family: muli;
+    color: #FAFAFA;
+    opacity: 0.38;
+    font-size: normal;
+  }
+  section :-moz-placeholder {
+    font-family: muli;
+    color: #FAFAFA;
+    opacity: 0.38;
+  }
+  section :-ms-input-placeholder, section :-ms-text-placeholder {
+    font-family: muli;
+    color: #FAFAFA;
+    opacity: 0.38;
+  }
+  section input, section textarea {
+    font-family: muli;
+    font-style: normal;
+    letter-spacing: 1px;
+  }
+  footer {
+    width: 100%;
+    margin: 0px;
+  }
+  header ul {
+    margin: 25vh auto;
+  }
+  header ul li {
+    margin: 5vh auto;
+  }
+  section article.block#hero {
+    height: 110vh;
+  }
+  section article.block#hero div#profile {
+    height: 85%;
+    overflow: hidden;
+  }
+  section article.block#hero div#profile img {
+    height: 25vh;
+    width: 25vh;
+  }
+  section article.block#hero div#identity {
+    height: 15%;
+  }
+  section article.block#hero div#identity ul {
+    margin: auto;
+    width: 100%;
+  }
+  section article.block#hero div#identity ul li {
+    margin-right: 10px;
+    display: inline-block;
+  }
+  section article.block#hero div#identity ul li svg {
+    height: 35px;
+    width: 35px;
+  }
+  section article.block#shortIntro {
+    flex-direction: row;
+  }
+  section article.block#shortIntro > div {
+    margin: 20px auto;
+  }
+  section article.block#whoAmI div {
+    width: 90%;
+    margin: auto;
+  }
+  section article.block#whoAmI img {
+    width: 50%;
+    height: 30%;
+  }
+  section article.block#webDeveloper div#myWhy {
+    width: 99%;
+  }
+  section article.block#webDeveloper div#myWhy div#imgCon {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+  }
+  section article.block#webDeveloper div#myWhy div#text {
+    width: calc(100%-4px);
+    margin: auto;
+    top: -25px;
+  }
+  section article.block#webDeveloper div#myWhy div#text p {
+    margin: 15% 5% 5% 5%;
+  }
+  section article.block#webDeveloper div#myWhy div#text ul {
+    text-align: center;
+    margin: auto;
+    margin-left: 5%;
+  }
+  section article.block#webDeveloper div#myWhy div#text ul li {
+    flex-direction: row;
+  }
+  section article.block#webDeveloper div#myWhy div#text ul li img {
+    margin: 0px 10px;
+  }
+  section article.block#mySkills > div h1.title {
+    margin: 5vh  auto 7vh auto;
+  }
+  section article.block#mySkills > div #skillsList {
+    width: 96%;
+  }
+  section article.block#mySkills > div #skillsList div.devSide {
+    height: auto;
+    width: 100%;
+    flex-direction: row;
+    margin: 15px auto;
+  }
+  section article.block#mySkills > div #skillsList div.devSide div {
+    margin: 15px auto;
+  }
+  section article.block#mySkills > div #skillsList div.devSide div {
+    width: 100%;
+  }
+  section article.block#mySkills img.fadedImage {
+    width: 100%;
+  }
+  section article.block#memberIn #groupes div#gList {
+    width: 99%;
+    flex-direction: column;
+  }
+  section article.block#memberIn #groupes div#gList div {
+    margin: 5% auto;
+    width: 100%;
+    height: 50%;
+  }
+  section article.block#contactMe {
+    height: auto;
+  }
+  section article.block#contactMe > div:first-child form {
+    width: 95%;
+  }
+  section article.block#contactMe > div:first-child form > div {
+    width: 90%;
+  }
+  section article.block#contactMe > div:first-child form input[type="submit"] {
+    width: 50%;
+  }
+  footer > div {
+    width: 90%;
+  }
+  footer > div div svg {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media only screen and (max-device-height: 400px) and (max-device-width: 800px) and (min-device-width: 530px) and (orientation: landscape), only screen and (max-height: 400px) and (max-width: 800px) and (min-width: 530px) {
+  header {
+    width: 100vw;
+    z-index: 5;
+    opacity: 1;
+    height: 15vh;
+    background-color: rgba(234, 242, 239, 0.8);
+    transition: 0.25s ease-in-out;
+  }
+  header div#menu {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    height: 11.25vh;
+    width: 11.25vh;
+    top: 3vh;
+    bottom: 0;
+    left: 10;
+  }
+  header div#menu div:nth-child(2) {
+    margin: calc($height/5) auto;
+  }
+  header ul {
+    text-align: center;
+    height: auto;
+  }
+  header ul li {
+    color: #eaf2ef;
+    padding-bottom: 10px;
+    transition: linear;
+    opacity: 0;
+  }
+  header ul li.animate:nth-child(1) {
+    animation: 1s leftSideIntro 0.05s forwards;
+  }
+  header ul li.animate:nth-child(2) {
+    animation: 1s leftSideIntro 0.1s forwards;
+  }
+  header ul li.animate:nth-child(3) {
+    animation: 1s leftSideIntro 0.15s forwards;
+  }
+  header ul li.animate:nth-child(4) {
+    animation: 1s leftSideIntro 0.2s forwards;
+  }
+  header ul li.animate:nth-child(5) {
+    animation: 1s leftSideIntro 0.25s forwards;
+  }
+  header ul li.animate:nth-child(6) {
+    animation: 1s leftSideIntro 0.3s forwards;
+  }
+  header.showMenu {
+    height: 100vh;
+    background-color: rgba(37, 48, 49, 0.984);
+  }
+  header.showMenu div#menu {
+    transition: 1s ease-in-out;
+    outline: none;
+  }
+  header.showMenu div#menu div {
+    background-color: #eaf2ef;
+  }
+  header.showMenu div#menu div:nth-child(1) {
+    transform-origin: bottom right;
+    transform: rotateZ(-35deg);
+  }
+  header.showMenu div#menu div:nth-child(2) {
+    animation: 0.2s leftSideIntro reverse forwards;
+  }
+  header.showMenu div#menu div:nth-child(3) {
+    transform-origin: top right;
+    transform: rotateZ(35deg);
+  }
+  section {
+    width: 100vw;
+    margin: 0px;
+  }
+  @font-face {
+    section {
+      font-family: muli;
+      src: url("../fonts/Muli/Muli-Italic.ttf");
+      font-weight: normal;
+      font-style: italic;
+    }
+  }
+  @font-face {
+    section {
+      font-family: muli;
+      src: url("../fonts/Muli/Muli-Light.ttf");
+      font-weight: lighter;
+      font-style: normal;
+    }
+  }
+  @font-face {
+    section {
+      font-family: muli;
+      src: url("../fonts/Muli/Muli-LightItalic.ttf");
+      font-weight: lighter;
+      font-style: italic;
+    }
+  }
+  @font-face {
+    section {
+      font-family: muli;
+      src: url("../fonts/Muli/Muli-Regular.ttf");
+      font-weight: normal;
+      font-style: normal;
+    }
+  }
+  section .title {
+    font-family: muli;
+    letter-spacing: 0.5vw;
+    font-style: normal;
+    font-weight: 800;
+  }
+  section #name {
+    font-family: muli;
+    font-weight: lighter;
+    font-style: italic;
+    letter-spacing: 3px;
+  }
+  section .subtitle, section em {
+    font-family: muli;
+    font-style: italic;
+    font-weight: lighter;
+  }
+  section .subtitle.quote, section em.quote {
+    letter-spacing: 3px;
+    word-spacing: 5px;
+  }
+  section h1.title {
+    font-size: 6vw;
+    width: 100%;
+    margin: 5vh auto;
+  }
+  section p {
+    font-family: muli;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    margin: auto;
+  }
+  section span, section a {
+    font-family: muli;
+    font-weight: normal;
+  }
+  section ::-webkit-input-placeholder, section ::-webkit-textarea-placeholder {
+    font-family: muli;
+    color: #FAFAFA;
+    opacity: 0.38;
+    font-size: normal;
+  }
+  section :-moz-placeholder {
+    font-family: muli;
+    color: #FAFAFA;
+    opacity: 0.38;
+  }
+  section :-ms-input-placeholder, section :-ms-text-placeholder {
+    font-family: muli;
+    color: #FAFAFA;
+    opacity: 0.38;
+  }
+  section input, section textarea {
+    font-family: muli;
+    font-style: normal;
+    letter-spacing: 1px;
+  }
+  footer {
+    width: 100%;
+    margin: 0px;
+  }
+  header ul {
+    margin: 20vh auto;
+  }
+  header ul li {
+    margin: 5vh auto;
+  }
+  section article.block#hero {
+    height: 130vh;
+  }
+  section article.block#hero div#profile {
+    height: 75%;
+    overflow: hidden;
+  }
+  section article.block#hero div#profile img {
+    height: 35vh;
+    width: 35vh;
+  }
+  section article.block#hero div#identity {
+    height: 25%;
+  }
+  section article.block#hero div#identity ul {
+    margin: auto;
+    width: 100%;
+  }
+  section article.block#hero div#identity ul li {
+    margin-right: 10px;
+    display: inline-block;
+  }
+  section article.block#hero div#identity ul li svg {
+    height: 35px;
+    width: 35px;
+  }
+  section article.block#shortIntro {
+    flex-direction: row;
+  }
+  section article.block#shortIntro > div {
+    margin: 20px auto;
+  }
+  section article.block#whoAmI div {
+    width: 90%;
+    margin: auto;
+  }
+  section article.block#whoAmI img {
+    width: 50%;
+    height: 30%;
+  }
+  section article.block#webDeveloper div#myWhy {
+    width: 99%;
+  }
+  section article.block#webDeveloper div#myWhy div#imgCon {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+  }
+  section article.block#webDeveloper div#myWhy div#text {
+    width: calc(100%-4px);
+    margin: auto;
+    top: -25px;
+  }
+  section article.block#webDeveloper div#myWhy div#text p {
+    margin: 15% 5% 5% 5%;
+  }
+  section article.block#webDeveloper div#myWhy div#text ul {
+    text-align: center;
+  }
+  section article.block#webDeveloper div#myWhy div#text ul li {
+    flex-direction: row;
+  }
+  section article.block#webDeveloper div#myWhy div#text ul li img {
+    margin: 0px 15px;
+  }
+  section article.block#mySkills > div h1.title {
+    margin: 5vh  auto 7vh auto;
+  }
+  section article.block#mySkills > div #skillsList {
+    width: 96%;
+  }
+  section article.block#mySkills > div #skillsList div.devSide {
+    height: auto;
+    width: 100%;
+    margin: 15px auto;
+    overflow: visible;
+  }
+  section article.block#mySkills > div #skillsList div.devSide div {
+    margin: 15px auto;
+  }
+  section article.block#mySkills > div #skillsList div.devSide div {
+    width: 100%;
+  }
+  section article.block#mySkills > div img[src="images/jquery.png"] {
+    width: 60%;
+  }
+  section article.block#mySkills img.fadedImage {
+    width: 100%;
+  }
+  section article.block#memberIn > div:last-child {
+    z-index: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  section article.block#memberIn #groupes div#gList {
+    width: 99%;
+    flex-direction: row;
+  }
+  section article.block#memberIn #groupes div#gList div {
+    margin: 5% auto;
+    width: 50%;
+    height: 70%;
+  }
+  section article.block#contactMe {
+    height: auto;
+  }
+  section article.block#contactMe > div:first-child form {
+    width: 95%;
+  }
+  section article.block#contactMe > div:first-child form > div {
+    width: 90%;
+  }
+  section article.block#contactMe > div:first-child form input {
+    height: 15%;
+  }
+  section article.block#contactMe > div:first-child form input[type="submit"] {
+    width: 30%;
+  }
+  footer > div {
+    width: 90%;
+  }
+  footer > div div svg {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media only screen and (min-device-height: 200px) and (max-device-width: 1000px) and (max-device-height: 800px) and (min-device-width: 650px) and (orientation: landscape), only screen and (min-height: 200px) and (max-height: 700px) and (max-width: 1000px) and (min-width: 650px) {
+  section article.block#hero {
+    height: 100vh;
+  }
+  section article.block#hero div#profile {
+    height: 75%;
+    overflow: hidden;
+  }
+  section article.block#hero div#profile img {
+    height: 30vh;
+    width: 30vh;
+  }
+  section article.block#hero div#identity {
+    height: 25%;
+  }
+  section article.block#hero div#identity ul {
+    margin: auto;
+    width: 100%;
+  }
+  section article.block#hero div#identity ul li {
+    margin-right: 10px;
+    display: inline-block;
+  }
+  section article.block#hero div#identity ul li svg {
+    height: 35px;
+    width: 35px;
+  }
+  section article.block#shortIntro {
+    flex-direction: row;
+  }
+  section article.block#shortIntro > div {
+    margin: 20px auto;
+  }
+  section article.block#whoAmI div {
+    width: 90%;
+    margin: auto;
+  }
+  section article.block#whoAmI img {
+    width: 50%;
+    height: 30%;
+  }
+  section article.block#webDeveloper div#myWhy {
+    width: 99%;
+  }
+  section article.block#webDeveloper div#myWhy div#imgCon {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+  }
+  section article.block#webDeveloper div#myWhy div#text {
+    width: calc(100%-4px);
+    margin: auto;
+    top: -25px;
+  }
+  section article.block#webDeveloper div#myWhy div#text p {
+    margin: 15% 5% 5% 5%;
+  }
+  section article.block#webDeveloper div#myWhy div#text ul {
+    text-align: center;
+  }
+  section article.block#webDeveloper div#myWhy div#text ul li {
+    flex-direction: row;
+  }
+  section article.block#webDeveloper div#myWhy div#text ul li img {
+    margin: 0px 15px;
+  }
+  section article.block#mySkills > div h1.title {
+    margin: 5vh  auto 7vh auto;
+  }
+  section article.block#mySkills > div #skillsList {
+    width: 96%;
+  }
+  section article.block#mySkills > div #skillsList div.devSide {
+    height: auto;
+    width: 100%;
+    margin: 15px auto;
+    overflow: visible;
+  }
+  section article.block#mySkills > div #skillsList div.devSide div {
+    margin: 15px auto;
+  }
+  section article.block#mySkills > div #skillsList div.devSide div {
+    width: 100%;
+  }
+  section article.block#mySkills > div img[src="images/jquery.png"] {
+    width: 60%;
+  }
+  section article.block#mySkills img.fadedImage {
+    width: 100%;
+  }
+  section article.block#memberIn > div:last-child {
+    z-index: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  section article.block#memberIn #groupes div#gList {
+    width: 99%;
+    flex-direction: row;
+  }
+  section article.block#memberIn #groupes div#gList div {
+    margin: 5% auto;
+    width: 50%;
+    height: auto;
+  }
+  section article.block#memberIn #groupes div#gList div a:first-child {
+    height: 40%;
+  }
+  section article.block#contactMe {
+    height: auto;
+  }
+  section article.block#contactMe > div:first-child form {
+    width: 95%;
+  }
+  section article.block#contactMe > div:first-child form > div {
+    width: 90%;
+  }
+  section article.block#contactMe > div:first-child form input {
+    height: 10%;
+  }
+  section article.block#contactMe > div:first-child form input[type="submit"] {
+    width: 30%;
+  }
+  footer > div {
+    width: 90%;
+  }
+  footer > div div svg {
+    width: 45px;
+    height: 45px;
+  }
+}

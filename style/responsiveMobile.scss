@@ -1,0 +1,740 @@
+@import 'mixins.scss' ;
+@import 'variables.scss';
+  // be chapless be formless "bruce lee"
+             // portrait 
+            @media only screen 
+              and (min-device-height: 300px) 
+              and (max-device-width: 550px)
+              and (max-device-height:740px)
+              and (orientation: portrait),only screen 
+              and (max-width: 550px)
+              and (max-height:700px)
+              and (min-height:300px){  
+                  
+                  @include mobileDocument(10vh);
+                    header{   
+                      
+                    ul{ margin: 25vh auto; li{margin: 5vh auto;}}
+            }
+                    section{
+                      article.block{
+                        
+                             &#hero{                  
+                                height: 110vh ;
+                                div#profile{   
+                                    height: 85%;
+                                    overflow: hidden ;         
+                                   
+                                    img{
+                                        height:25vh;
+                                        width:25vh;
+                                    }
+                                }  
+                                div#identity{
+                                    height: 15% ;
+                                    ul{
+                                        margin: auto ;
+                                        width: 100%;
+                                        li{
+                                            margin-right: 10px ;
+                                            display: inline-block;
+                                            svg{
+                                                height: 35px ;
+                                                width: 35px ;
+                                            }
+
+                                        }
+                                    }
+
+                                }
+                        }
+                             &#shortIntro{    
+                            flex-direction: column;
+                            >div{
+                                margin: 20px auto ;
+                            }
+        }
+                             &#whoAmI{
+                                 
+                                div{
+                                    width: 90% ;
+                                    margin: auto ;
+                                }
+                                img{
+                                   
+                                    width: 50%;
+                                    height: 30% ;
+                                  
+                                }
+                                    }
+                             &#webDeveloper{                       
+                                div#myWhy{
+                                    width: 99% ;
+                                    div#imgCon{    
+                                        
+                                        width: 100px ;
+                                        height: 100px ;
+                                        margin: auto ;
+                                    }
+                                    div#text{
+                                        width: calc(100%-4px) ;
+                                        margin: auto ;
+                                         top: -25px ;
+                                        p{
+                                            margin: 15% 5% 5% 5%  ;
+                                        }
+                                        ul{
+                                            text-align: center ;
+                                            margin: auto ;
+                                            li{ 
+                                                flex-direction: column; 
+                                                
+
+                                                img{margin: 10px 0;}
+                                            }
+                                                                            }
+                                        
+                                    }
+                                }
+        }
+                             &#mySkills{                              
+                                >div{
+                                  h1.title{ margin: 5vh  auto 7vh auto;}
+                                  #skillsList{
+                                    width: 96% ;
+                                    div.devSide{
+                                        height: auto ;
+                                        width: 100%;
+                                        flex-direction: column ;
+                                        margin: 15px auto ;
+                                        div{
+                                            margin: 15px auto ;
+                                                }
+                                        @include skills($skillsType,$skillsnumber,"column"); 
+                                            }
+
+                                        }
+
+                                    }                                
+                                    img.fadedImage{
+                                        width: 100% ;
+                                      
+                                    }
+        }
+                             &#memberIn{
+                                #groupes{
+                                    div#gList{
+                                        width: 99% ;
+                                        flex-direction: column;
+                                        div{
+                                            margin: 5% auto ;
+                                            width: 100% ;
+                                            height: 50% ;
+                                        }
+                                    }
+                                    
+
+                                }
+                               
+        }
+                             &#contactMe{
+                                height: auto ;
+                                  div#thanks{
+                        font-size: 10vw ;
+                                 }
+                                >div{
+                                    &:first-child{
+                                    form{  
+                                        width: 95% ;
+                                        >div{
+                                            width: 90% ;
+                                        }
+                                        input{              
+                                       
+                                        &[type="submit"]{ 
+                                                width: 50% ;
+                                               
+                                            }
+
+                                        }
+                                       
+                                       
+                                    }
+                                   
+                                    }
+                                   
+
+                                }
+        }
+                      }
+                  }
+                    footer{
+                                >div{
+                                    width: 90% ;
+                                    div svg{
+                                        width: 45px ;
+                                        height: 45px ;
+                                    }
+
+                                }
+}  
+                         }
+            
+             @media only screen 
+              and (min-device-height: 300px) 
+              and (max-device-width: 700px)
+              and (min-device-width: 530px)
+              and (max-device-height:700px)
+              and (orientation: portrait),only screen 
+              and (max-width: 700px)
+              and (min-width: 530px)
+              and (max-height:700px)
+              and (min-height:300px){               
+                  @include mobileDocument(10vh);
+                    header{  
+            
+                    ul{ margin: 25vh auto; li{margin: 5vh auto;}}
+            }
+                    section{
+                      article.block{
+                             &#hero{                  
+                                height: 110vh ;
+                                div#profile{   
+                                    height: 85%;
+                                    overflow: hidden ;         
+                                   
+                                    img{
+                                        height:25vh;
+                                        width:25vh;
+                                    }
+                                }  
+                                div#identity{
+                                    height: 15% ;
+                                    ul{
+                                        margin: auto ;
+                                        width: 100%;
+                                        li{
+                                            margin-right: 10px ;
+                                            display: inline-block;
+                                            svg{
+                                                height: 35px ;
+                                                width: 35px ;
+                                            }
+
+                                        }
+                                    }
+
+                                }
+                        }
+                             &#shortIntro{    
+                            flex-direction: row;
+                            >div{
+                                margin: 20px auto ;
+                            }
+        }
+                             &#whoAmI{
+                                 
+                                div{
+                                    width: 90% ;
+                                    margin: auto ;
+                                }
+                                img{
+                                   
+                                    width: 50%;
+                                    height: 30% ;
+                                  
+                                }
+                                    }
+                             &#webDeveloper{                       
+                                div#myWhy{
+                                    width: 99% ;
+                                    div#imgCon{    
+                                        
+                                        width: 100px ;
+                                        height: 100px ;
+                                        margin: auto ;
+                                    }
+                                    div#text{
+                                        width: calc(100%-4px) ;
+                                        margin: auto ;
+                                         top: -25px ;
+                                        p{
+                                            margin: 15% 5% 5% 5%  ;
+                                        }
+                                        ul{
+                                            text-align: center ;
+                                            margin: auto ;
+                                            margin-left: 5%;
+                                            li{ 
+                                                flex-direction: row; 
+                                                
+
+                                                img{margin: 0px 10px;}
+                                            }
+                                                                            }
+                                        
+                                    }
+                                }
+        }
+                             &#mySkills{                              
+                                >div{
+                                  h1.title{ margin: 5vh  auto 7vh auto;}
+                                  #skillsList{
+                                    width: 96% ;
+                                    div.devSide{
+                                        height: auto ;
+                                        width: 100%;
+                                        flex-direction: row;
+                                        margin: 15px auto ;
+                                        div{
+                                            margin: 15px auto ;
+                                                }
+                                        @include skills($skillsType,$skillsnumber,"column"); 
+                                            }
+
+                                        }
+
+                                    }                                
+                                    img.fadedImage{
+                                        width: 100% ;
+                                      
+                                    }
+        }
+                             &#memberIn{
+                                #groupes{
+                                    div#gList{
+                                        width: 99% ;
+                                        flex-direction: column;
+                                        div{
+                                            margin: 5% auto ;
+                                            width: 100% ;
+                                            height: 50% ;
+                                        }
+                                    }
+                                    
+
+                                }
+                        
+        }
+                             &#contactMe{
+                                height: auto ;
+                                >div{
+                                    &:first-child{
+                                    form{  
+                                        width: 95% ;
+                                        >div{
+                                            width: 90% ;
+                                        }
+                                        input{              
+                                       
+                                        &[type="submit"]{ 
+                                                width: 50% ;
+                                               
+                                            }
+
+                                        }
+                                       
+                                       
+                                    }
+                                   
+                                    }
+                                   
+
+                                }
+        }
+                      } 
+                  }
+                    footer{
+                                >div{
+                                    width: 90% ;
+                                    div svg{
+                                        width: 45px ;
+                                        height: 45px ;
+                                    }
+
+                                }
+}  
+                         }
+            
+                // Landscape 
+             @media only screen  
+              and (max-device-height: 400px)
+              and (max-device-width: 800px)
+              and(min-device-width:530px)
+              and (orientation: landscape),only screen 
+              and (max-height: 400px)
+              and (max-width: 800px)
+              and(min-width:530px){           
+                    @include mobileDocument(15vh);
+                    header{
+                        ul{ margin: 20vh auto;  ; li{margin: 5vh auto;}}
+            }
+                    section{
+                      article.block{
+                             &#hero{  
+                                 
+                                height: 130vh ;
+                                div#profile{   
+                                    height: 75%;
+                                    overflow: hidden ;         
+                                   
+                                    img{
+                                        height:35vh;
+                                        width:35vh;
+                                    }
+                                }  
+                                div#identity{
+                                    height: 25% ;
+                                    ul{
+                                        margin: auto ;
+                                        width: 100%;
+                                        li{
+                                            margin-right: 10px ;
+                                            display: inline-block;
+                                            svg{
+                                                height: 35px ;
+                                                width: 35px ;
+                                            }
+
+                                        }
+                                    }
+
+                                }
+                        }
+                             &#shortIntro{    
+                            flex-direction: row;
+                            >div{
+                                margin: 20px auto ;
+                            }
+        }
+                             &#whoAmI{
+                                 
+                                div{
+                                    width: 90% ;
+                                    margin: auto ;
+                                }
+                                img{
+                                   
+                                    width: 50%;
+                                    height: 30% ;
+                                  
+                                }
+                                    }
+                             &#webDeveloper{                       
+                                div#myWhy{
+                                    width: 99% ;
+                                    div#imgCon{    
+                                        
+                                        width: 100px ;
+                                        height: 100px ;
+                                        margin: auto ;
+                                    }
+                                    div#text{
+                                        width: calc(100%-4px) ;
+                                        margin: auto ;
+                                         top: -25px ;
+                                        p{
+                                            margin: 15% 5% 5% 5%  ;
+                                        }
+                                        ul{   
+                                            text-align: center ;
+                                            li{ 
+                                                flex-direction: row; 
+                                                
+
+                                                img{margin: 0px 15px;}
+                                            }
+                                                                            }
+                                        
+                                    }
+                                }
+        }
+                             &#mySkills{                              
+                                >div{
+                                  h1.title{ margin: 5vh  auto 7vh auto;}
+                                  #skillsList{
+                                    width: 96% ;
+                                    div.devSide{
+                                        height: auto ;
+                                        width: 100%;
+                                        margin: 15px auto ;
+                                        overflow: visible;
+                                        div{             
+                                            margin: 15px auto;
+                                                }
+                    @include skills($skillsType,$skillsnumber,"flex"); 
+                                            }
+
+                                        }
+                                    img[src="images/jquery.png"]{
+                                        width: 60% ;
+                                    }
+
+                                    }                                
+                                    img.fadedImage{
+                                        width: 100% ;
+                                      
+                                    }
+                                            }
+                             &#memberIn{
+                                     >div:last-child{
+                                    
+                                            z-index: 0;
+                                            position: absolute ;
+                                            right:0;
+                                            bottom: 0;
+                                            
+                                            margin: auto ;
+
+                                        
+                }
+                                #groupes{
+                                    div#gList{
+                                        width: 99% ;
+                                        flex-direction: row;
+                                        div{
+                                            margin: 5% auto ;
+                                            width: 50% ;
+                                            height: 70% ;
+                                        }
+                                    }
+                                    
+
+                                }
+                                
+        }
+                             &#contactMe{
+                                height: auto ;
+                                >div{
+                                    &:first-child{
+                                    form{  
+                                        width: 95% ;
+                                        >div{
+                                            width: 90% ;
+                                        }
+                                        input{              
+                                        height: 15% ;
+                                        &[type="submit"]{ 
+                                                width: 30% ;
+                                               
+                                            }
+
+                                        }
+                                       
+                                       
+                                    }
+                                   
+                                    }
+                                   
+
+                                }
+        }
+                      }
+                  }
+                    footer{
+                                >div{
+                                    width: 90% ;
+                                    div svg{
+                                        width: 45px ;
+                                        height: 45px ;
+                                    }
+
+                                }
+}
+     
+}
+             
+
+           @media only screen  
+              and (min-device-height:200px)
+              and (max-device-width: 1000px)
+              and (max-device-height: 800px)
+              and(min-device-width:650px)
+              and (orientation: landscape),only screen 
+              and (min-height: 200px)
+              and (max-height:700px)
+              and (max-width: 1000px)
+              and(min-width:650px){
+                
+                     section{
+                      article.block{
+                             &#hero{  
+                                 
+                                height: 100vh ;
+                                div#profile{   
+                                    height: 75%;
+                                    overflow: hidden ;         
+                                
+                                    img{
+                                        height:30vh;
+                                        width:30vh;
+                                    }
+                                }  
+                                div#identity{
+                                    height: 25% ;
+                                    ul{
+                                        margin: auto ;
+                                        width: 100%;
+                                        li{
+                                            margin-right: 10px ;
+                                            display: inline-block;
+                                            svg{
+                                                height: 35px ;
+                                                width: 35px ;
+                                            }
+
+                                        }
+                                    }
+
+                                }
+                        }
+                             &#shortIntro{    
+                            flex-direction: row;
+                            >div{
+                                margin: 20px auto ;
+                            }
+        }
+                             &#whoAmI{
+                                 
+                                div{
+                                    width: 90% ;
+                                    margin: auto ;
+                                }
+                                img{
+                                   
+                                    width: 50%;
+                                    height: 30% ;
+                                  
+                                }
+                                    }
+                             &#webDeveloper{    
+                                 
+                                div#myWhy{
+                                    
+                                    width: 99% ;
+                                    div#imgCon{    
+                                        
+                                        width: 100px ;
+                                        height: 100px ;
+                                        margin: auto ;
+                                    }
+                                    div#text{
+                                        width: calc(100%-4px) ;
+                                        margin: auto ;
+                                         top: -25px ;
+                                        p{
+                                            margin: 15% 5% 5% 5%  ;
+                                        }
+                                        ul{  
+                                            text-align: center ;
+                                          
+                                            li{ 
+                                                flex-direction: row; 
+                                                
+
+                                                img{margin: 0px 15px;}
+                                            }
+                                                                            }
+                                        
+                                    }
+                                }
+        }
+                             &#mySkills{                              
+                                >div{
+                                  h1.title{ margin: 5vh  auto 7vh auto;}
+                                  #skillsList{
+                                    width: 96% ;
+                                    div.devSide{
+                                        height: auto ;
+                                        width: 100%;
+                                        margin: 15px auto ;
+                                        overflow: visible;
+                                        div{             
+                                            margin: 15px auto;
+                                                }
+                    @include skills($skillsType,$skillsnumber,"flex"); 
+                                            }
+
+                                        }
+                                    img[src="images/jquery.png"]{
+                                        width: 60% ;
+                                    }
+
+                                    }                                
+                                    img.fadedImage{
+                                        width: 100% ;
+                                      
+                                    }
+                                            }
+                             &#memberIn{
+                                     >div:last-child{
+                                    
+                                            z-index: 0;
+                                            position: absolute ;
+                                            right:0;
+                                            bottom: 0;   
+                                            margin: auto ;
+
+                                           
+                }
+                                #groupes{
+                                    div#gList{
+                                        width: 99% ;
+                                        flex-direction: row;
+                                        div{
+                                            margin: 5% auto ;
+                                            width: 50% ;
+                                            height: auto;
+                                            a{
+                                                  &:first-child{ 
+                                                        height: 40%;
+                                            }
+                                        }
+                                    }
+                                    
+
+                                }
+                                
+        }
+                          }
+                             &#contactMe{
+                                height: auto ;
+                                >div{
+                                    &:first-child{
+                                    form{  
+                                        width: 95% ;
+                                        >div{
+                                            width: 90% ;
+                                        }
+                                        input{              
+                                        height: 10% ;
+                                        &[type="submit"]{ 
+                                                width: 30% ;
+                                               
+                                            }
+
+                                        }
+                                       
+                                       
+                                    }
+                                   
+                                    }
+                                   
+
+                                }
+        }
+                      }
+                  }
+                    footer{
+                                >div{
+                                    width: 90% ;
+                                    div svg{
+                                        width: 45px ;
+                                        height: 45px ;
+                                    }
+
+                                }
+}
+                   
+}  
+       

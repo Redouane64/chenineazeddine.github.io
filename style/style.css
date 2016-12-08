@@ -1,0 +1,923 @@
+@-webkit-keyframes leftSideIntro {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes textIntro {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes send {
+  from {
+    -webkit-transform: scale(1);
+    transform-origin: center;
+  }
+  to {
+    -webkit-transform: scale(0.4);
+    transform-origin: center;
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes thanks {
+  from {
+    transform-origin: top;
+    -webkit-transform: scale(1.5);
+    opacity: 0;
+  }
+  30%, 100% {
+    transform-origin: top;
+    -webkit-transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes shadow {
+  from {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@font-face {
+  font-family: muli;
+  src: url("../fonts/Muli/Muli-Italic.ttf");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: muli;
+  src: url("../fonts/Muli/Muli-Light.ttf");
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: muli;
+  src: url("../fonts/Muli/Muli-LightItalic.ttf");
+  font-weight: lighter;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: muli;
+  src: url("../fonts/Muli/Muli-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.title {
+  font-family: muli;
+  letter-spacing: 0.5vw;
+  font-style: normal;
+  font-weight: 800;
+}
+
+#name {
+  font-family: muli;
+  font-weight: lighter;
+  font-style: italic;
+  letter-spacing: 3px;
+}
+
+.subtitle, em {
+  font-family: muli;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.subtitle.quote, em.quote {
+  letter-spacing: 3px;
+  word-spacing: 5px;
+}
+
+h1.title {
+  font-size: 2vw;
+  width: 100%;
+  margin: 5vh auto;
+}
+
+p {
+  font-family: muli;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+  margin: auto;
+}
+
+span, a {
+  font-family: muli;
+  font-weight: normal;
+}
+
+::-webkit-input-placeholder, ::-webkit-textarea-placeholder {
+  font-family: muli;
+  color: #FAFAFA;
+  opacity: 0.38;
+  font-size: normal;
+}
+
+:-moz-placeholder {
+  font-family: muli;
+  color: #FAFAFA;
+  opacity: 0.38;
+}
+
+:-ms-input-placeholder, :-ms-text-placeholder {
+  font-family: muli;
+  color: #FAFAFA;
+  opacity: 0.38;
+}
+
+input, textarea {
+  font-family: muli;
+  font-style: normal;
+  letter-spacing: 1px;
+}
+
+html {
+  padding: 0px;
+  width: 0px;
+}
+
+body {
+  width: 100vw;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  background-color: #EAF2EF;
+}
+
+body * {
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  position: relative;
+}
+
+body a {
+  text-decoration: none;
+  color: inherit;
+}
+
+div#portfolio {
+  width: 100%;
+}
+
+div#portfolio.short {
+  height: 100vh;
+}
+
+header {
+  background-color: #EAF2EF;
+  position: fixed;
+  width: 15%;
+  height: 100vh;
+}
+
+header div#menu {
+  display: none;
+  overflow: visible;
+}
+
+header div#menu div {
+  width: 100%;
+  height: calc(100%/6);
+  background-color: #253031;
+  margin: 0px;
+}
+
+header div#menu div:nth-child(2) {
+  margin: calc(4vh/5) auto;
+}
+
+header ul {
+  width: 90%;
+  display: block;
+  height: 50vh;
+  margin: 40vh 0px;
+  text-align: right;
+  letter-spacing: 1px;
+  font-family: title;
+}
+
+header ul li {
+  color: darkgray;
+  margin: 10px auto;
+  transition: 0.15s ease-in-out;
+}
+
+header ul li:hover {
+  color: #253031;
+  cursor: pointer;
+}
+
+section {
+  width: 85%;
+  margin-left: 15%;
+}
+
+section article.block {
+  width: 100%;
+}
+
+section article.block#hero {
+  height: 70vh;
+}
+
+section article.block#hero div#profile {
+  height: 80%;
+  overflow: visible;
+}
+
+section article.block#hero div#profile .background {
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/hero.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+section article.block#hero div#profile img {
+  z-index: 1;
+  transition: ease-in-out;
+  height: 15vw;
+  width: 15vw;
+  display: block;
+  border: 3px solid #F05D5E;
+  border-radius: 50%;
+  margin: auto;
+  top: calc(-50% - 7.5vw);
+}
+
+section article.block#hero div#identity {
+  z-index: 0;
+  height: 20%;
+  background-color: #E3E4DB;
+  text-align: center;
+  color: #F05D5E;
+}
+
+section article.block#hero div#identity ul {
+  margin: auto;
+  width: 50%;
+  top: 40%;
+  overflow: visible;
+}
+
+section article.block#hero div#identity ul li {
+  margin-right: 10px;
+  display: inline-block;
+}
+
+section article.block#hero div#identity ul li:first-child {
+  animation: 1s leftSideIntro;
+}
+
+section article.block#hero div#identity ul li svg {
+  fill: #FDFFFC;
+  height: 35px;
+  width: 35px;
+}
+
+section article.block#hero div#identity ul li #name {
+  animation: 1s textIntro;
+}
+
+section article.block#shortIntro {
+  height: auto;
+  padding: 10px 0;
+  background-color: #F05D5E;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+section article.block#shortIntro > div {
+  width: 100%;
+  text-align: center;
+  color: #FDFFFC;
+  opacity: 0;
+  transition: ease-in;
+  opacity: 0;
+}
+
+section article.block#shortIntro > div.animate:nth-child(1) {
+  animation: 1s leftSideIntro 0.2s forwards;
+}
+
+section article.block#shortIntro > div.animate:nth-child(2) {
+  animation: 1s leftSideIntro 0.4s forwards;
+}
+
+section article.block#shortIntro > div.animate:nth-child(3) {
+  animation: 1s leftSideIntro 0.6s forwards;
+}
+
+section article.block#shortIntro svg {
+  height: 60px;
+  width: 60px;
+  display: block;
+  margin: auto;
+  fill: #FDFFFC;
+  margin-bottom: 5px;
+}
+
+section article.block#whoAmI {
+  height: auto;
+  background-color: #253031;
+  color: #FDFFFC;
+}
+
+section article.block#whoAmI div {
+  padding-bottom: 50px;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+section article.block#whoAmI div p {
+  text-align: center;
+  margin-top: 15px;
+  opacity: 0;
+}
+
+section article.block#whoAmI div p.animate:nth-child(1) {
+  animation: 1s textIntro 0.2s forwards;
+}
+
+section article.block#whoAmI div p.animate:nth-child(2) {
+  animation: 1s textIntro 0.4s forwards;
+}
+
+section article.block#whoAmI div p.animate:nth-child(3) {
+  animation: 1s textIntro 0.6s forwards;
+}
+
+section article.block#whoAmI div p.animate:nth-child(4) {
+  animation: 1s textIntro 0.8s forwards;
+}
+
+section article.block#whoAmI div p a {
+  color: #3C91E6;
+}
+
+section article.block#whoAmI div p a:hover {
+  text-decoration: underline;
+}
+
+section article.block#whoAmI img {
+  display: block;
+  z-index: 0;
+  position: absolute;
+  top: 30;
+  margin-left: 15%;
+  width: 30%;
+  height: 60%;
+  opacity: 0.07;
+}
+
+section article.block#webDeveloper {
+  height: auto;
+  background-color: #FF6B35;
+}
+
+section article.block#webDeveloper h1.title {
+  color: #F8FFE5;
+}
+
+section article.block#webDeveloper > div:last-child {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+  top: 0;
+}
+
+section article.block#webDeveloper > div:last-child img.fadedImage {
+  position: absolute;
+  opacity: 0.15;
+}
+
+section article.block#webDeveloper > div:last-child img.fadedImage:nth-child(1) {
+  top: 60%;
+  left: 2.5%;
+}
+
+section article.block#webDeveloper > div:last-child img.fadedImage:nth-child(2) {
+  top: 30%;
+  right: 5%;
+}
+
+section article.block#webDeveloper div#myWhy {
+  z-index: 1;
+  width: calc(50% + 3vw);
+  margin: auto;
+  text-align: center;
+}
+
+section article.block#webDeveloper div#myWhy div#imgCon {
+  opacity: 0;
+  transition: ease-in;
+  z-index: 2;
+  border: 3px solid rgba(248, 255, 229, 0.4);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+section article.block#webDeveloper div#myWhy div#imgCon.animate {
+  animation: 0.5s textIntro forwards;
+}
+
+section article.block#webDeveloper div#myWhy div#imgCon img {
+  display: block;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+section article.block#webDeveloper div#myWhy div#text {
+  color: black;
+  background-color: rgba(248, 255, 229, 0.5);
+  top: -50px;
+  width: 90%;
+  margin: auto;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  transition: 0.5s ease-in;
+  opacity: 0;
+}
+
+section article.block#webDeveloper div#myWhy div#text p {
+  margin: 10% 10% 0% 10%;
+  opacity: 0;
+}
+
+section article.block#webDeveloper div#myWhy div#text p.animate:nth-child(1) {
+  animation: 1s textIntro 0.2s forwards;
+}
+
+section article.block#webDeveloper div#myWhy div#text ul {
+  margin: 50px 0px 0px 0;
+  text-align: center;
+  width: auto;
+  overflow-x: visible;
+}
+
+section article.block#webDeveloper div#myWhy div#text ul li {
+  margin: 20px  15%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  opacity: 0;
+}
+
+section article.block#webDeveloper div#myWhy div#text ul li:first-child {
+  margin-top: 0px;
+}
+
+section article.block#webDeveloper div#myWhy div#text ul li img {
+  height: 70px;
+  width: 70px;
+  margin-right: 10px;
+}
+
+section article.block#webDeveloper div#myWhy div#text ul li.animate:nth-child(1) {
+  animation: 1s leftSideIntro 0.75s forwards;
+}
+
+section article.block#webDeveloper div#myWhy div#text ul li.animate:nth-child(2) {
+  animation: 1s leftSideIntro 1s forwards;
+}
+
+section article.block#webDeveloper div#myWhy div#text ul li.animate:nth-child(3) {
+  animation: 1s leftSideIntro 1.25s forwards;
+}
+
+section article.block#webDeveloper div#myWhy div#text.shadow {
+  animation: 1s shadow forwards;
+  box-shadow: 5px -5px 15px 3px rgba(37, 48, 49, 0.2), -5px 5px 15px 3px rgba(37, 48, 49, 0.2);
+}
+
+section article.block#mySkills {
+  height: auto;
+  background-color: #F8FFE5;
+}
+
+section article.block#mySkills > div {
+  height: auto;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+
+section article.block#mySkills > div #skillsList {
+  z-index: 1;
+  height: auto;
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  overflow: visible;
+}
+
+section article.block#mySkills > div div.devSide {
+  overflow: visible;
+  margin: 6vh auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: space-around;
+}
+
+section article.block#mySkills > div div.devSide div {
+  width: 100%;
+}
+
+section article.block#mySkills > div div.devSide div {
+  opacity: 0;
+  transition: 1s ease-in;
+}
+
+section article.block#mySkills > div div.devSide div.animate {
+  animation: 1s leftSideIntro forwards;
+}
+
+section article.block#mySkills img[src="images/jquery.png"] {
+  width: 60%;
+}
+
+section article.block#mySkills img.fadedImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  display: block;
+  width: 60%;
+  height: 80%;
+  z-index: 0;
+  opacity: 0.13;
+}
+
+section article.block#memberIn {
+  height: auto;
+  background-color: #FAF3DD;
+  color: #253031;
+  padding-bottom: 40px;
+}
+
+section article.block#memberIn > div {
+  text-align: center;
+  height: auto;
+  width: auto;
+}
+
+section article.block#memberIn > div:last-child {
+  z-index: 0;
+  position: absolute;
+  right: -20;
+  bottom: 0;
+}
+
+section article.block#memberIn > div:last-child img.fadedImage {
+  opacity: 0.13;
+}
+
+section article.block#memberIn #groupes {
+  z-index: 1;
+}
+
+section article.block#memberIn #groupes div#gList {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  align-items: center;
+}
+
+section article.block#memberIn #groupes div#gList div {
+  height: 50%;
+  overflow: visible;
+  text-align: center;
+  opacity: 0;
+  width: 50%;
+}
+
+section article.block#memberIn #groupes div#gList div.animate:nth-child(1) {
+  animation: 1s leftSideIntro 0.2s forwards;
+}
+
+section article.block#memberIn #groupes div#gList div.animate:nth-child(2) {
+  animation: 1s leftSideIntro 0.4s forwards;
+}
+
+section article.block#memberIn #groupes div#gList div a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+section article.block#memberIn #groupes div#gList div a:first-child {
+  display: flex;
+  cursor: default;
+  height: 80%;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+section article.block#memberIn #groupes div#gList div a:nth-child(2) {
+  cursor: pointer;
+  text-align: center;
+  height: auto;
+}
+
+section article.block#memberIn #groupes div#gList div a:nth-child(2):hover {
+  color: #3C91E6;
+}
+
+section article.block#memberIn #groupes div#gList div img {
+  margin: auto;
+  cursor: pointer;
+  display: block;
+  max-height: 95%;
+  transition: 0.25s ease-in;
+}
+
+section article.block#memberIn #groupes div#gList div img[src$="gdgAlgiers.png"] {
+  max-height: 60%;
+  max-width: 80%;
+}
+
+section article.block#contactMe {
+  height: auto;
+  background-color: #5C97BF;
+  padding-bottom: 30px;
+}
+
+section article.block#contactMe .title {
+  color: #FAFAFA;
+}
+
+section article.block#contactMe > div {
+  height: auto;
+  text-align: center;
+}
+
+section article.block#contactMe > div:first-child {
+  z-index: 1;
+}
+
+section article.block#contactMe > div:first-child form {
+  transition: ease-in-out;
+  height: auto;
+  width: 60%;
+  margin: auto;
+  overflow: visible;
+  margin-bottom: 10px;
+}
+
+section article.block#contactMe > div:first-child form.send div:nth-child(1) {
+  animation: 1s send 0s alternate 2;
+}
+
+section article.block#contactMe > div:first-child form.send input[type="submit"] {
+  animation: 1s send 0.3s alternate 2;
+}
+
+section article.block#contactMe > div:first-child form.send div:nth-child(2) {
+  animation: 1s send 0.1s alternate 2;
+}
+
+section article.block#contactMe > div:first-child form.send input[type="submit"] {
+  animation: 1s send 0.3s alternate 2;
+}
+
+section article.block#contactMe > div:first-child form.send div:nth-child(3) {
+  animation: 1s send 0.2s alternate 2;
+}
+
+section article.block#contactMe > div:first-child form.send input[type="submit"] {
+  animation: 1s send 0.3s alternate 2;
+}
+
+section article.block#contactMe > div:first-child form > div {
+  text-align: right;
+  margin: auto;
+  width: 75%;
+  overflow: visible;
+  margin: 15px auto 0px auto;
+}
+
+section article.block#contactMe > div:first-child form input, section article.block#contactMe > div:first-child form textarea {
+  width: 100%;
+  height: 80%;
+  color: #FAFAFA;
+  background-color: rgba(191, 191, 191, 0.4);
+  border: 2px solid rgba(37, 48, 49, 0.5);
+  padding-left: 10px;
+  outline: 0;
+}
+
+section article.block#contactMe > div:first-child form input:focus, section article.block#contactMe > div:first-child form textarea:focus {
+  box-shadow: 5px -5px 10px 2px rgba(37, 48, 49, 0.05), -5px 5px 10px 3px rgba(37, 48, 49, 0.05);
+}
+
+section article.block#contactMe > div:first-child form input.error, section article.block#contactMe > div:first-child form textarea.error {
+  background-color: rgba(239, 83, 80, 0.4);
+  border-color: #F22613;
+}
+
+section article.block#contactMe > div:first-child form div.errorContainer {
+  height: 20px;
+  margin-top: 5px;
+}
+
+section article.block#contactMe > div:first-child form div.errorContainer span.error {
+  font-weight: bolder;
+  font-style: normal;
+  color: #F22613;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+section article.block#contactMe > div:first-child form input {
+  height: 10%;
+}
+
+section article.block#contactMe > div:first-child form input[type="submit"] {
+  width: 25%;
+  display: block;
+  color: #3C91E6;
+  background: #FAFAFA;
+  cursor: pointer;
+  margin: 20px auto;
+  font-family: muli;
+  letter-spacing: 3px;
+  transition: 0.2s ease-in-out;
+  border: none;
+  transform: scale(0.98);
+}
+
+section article.block#contactMe > div:first-child form input[type="submit"]:hover {
+  background-color: whitesmoke;
+  transform: scale(1);
+  box-shadow: 5px -5px 20px 3px rgba(37, 48, 49, 0.1), -5px 5px 20px 3px rgba(37, 48, 49, 0.1);
+}
+
+section article.block#contactMe > div:first-child form textarea {
+  height: 40%;
+  padding-top: 10px;
+}
+
+section article.block#contactMe > div:last-child {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
+
+section article.block#contactMe > div:last-child img {
+  display: block;
+  height: 100%;
+  bottom: 0;
+  opacity: 0.15;
+}
+
+section article.block#contactMe > div div#thanks {
+  font-size: 8vh;
+  color: whitesmoke;
+  font-family: muli,monospace;
+  letter-spacing: 2px;
+  word-spacing: 4px;
+  position: absolute;
+  top: 30%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+}
+
+section article.block#contactMe > div div#thanks.replay {
+  transition: ease-in-out;
+  animation: 0.7s thanks 0.3s alternate 2;
+}
+
+footer {
+  width: 85%;
+  margin-left: 15%;
+  height: auto;
+  background-color: #E3E4DB;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+footer > div {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  height: 20vh;
+  overflow: visible;
+}
+
+footer > div > div {
+  margin: auto;
+  opacity: 0;
+  overflow: visible;
+}
+
+footer > div > div.animate:nth-child(1) {
+  animation: 1s leftSideIntro 0.2s forwards;
+}
+
+footer > div > div.animate:nth-child(2) {
+  animation: 1s leftSideIntro 0.3s forwards;
+}
+
+footer > div > div.animate:nth-child(3) {
+  animation: 1s leftSideIntro 0.4s forwards;
+}
+
+footer > div > div.animate:nth-child(4) {
+  animation: 1s leftSideIntro 0.5s forwards;
+}
+
+footer > div > div.animate:nth-child(5) {
+  animation: 1s leftSideIntro 0.6s forwards;
+}
+
+footer > div > div a {
+  overflow: visible;
+}
+
+footer > div > div svg {
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  border: none;
+  border-radius: 50%;
+}
+
+footer > div > div svg:hover {
+  transform: scale(1.05);
+  box-shadow: 3px 2px 5px 1px rgba(37, 48, 49, 0.2);
+}
+
+footer > div > div svg:hover#linkedin {
+  fill: #0077b5;
+}
+
+footer > div > div svg:hover#github {
+  fill: #6e5494;
+}
+
+footer > div > div svg:hover#facebook {
+  fill: #3b5998;
+}
+
+footer > div > div svg:hover#twitter {
+  fill: #1da1f2;
+}
+
+footer > div > div svg:hover#instagram {
+  fill: #e1306c;
+}
+
+footer em {
+  opacity: 0;
+}
+
+footer em.animate {
+  animation: 1s textIntro 1s forwards;
+}
