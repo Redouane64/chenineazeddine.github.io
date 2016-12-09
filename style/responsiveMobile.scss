@@ -3,13 +3,13 @@
   // be chapless be formless "bruce lee"
              // portrait 
             @media only screen 
-              and (min-device-height: 300px) 
+              and (min-device-height: 100px) 
               and (max-device-width: 550px)
               and (max-device-height:740px)
               and (orientation: portrait),only screen 
               and (max-width: 550px)
               and (max-height:700px)
-              and (min-height:300px){  
+              and (min-height:100px){  
                   
                   @include mobileDocument(10vh);
                     header{   
@@ -189,7 +189,7 @@
               and (max-width: 700px)
               and (min-width: 530px)
               and (max-height:700px)
-              and (min-height:300px){               
+              and (min-height:100px){               
                   @include mobileDocument(10vh);
                     header{  
             
@@ -546,12 +546,12 @@
              
 
            @media only screen  
-              and (min-device-height:200px)
+              and (min-device-height:100px)
               and (max-device-width: 1000px)
               and (max-device-height: 800px)
               and(min-device-width:650px)
               and (orientation: landscape),only screen 
-              and (min-height: 200px)
+              and (min-height: 100px)
               and (max-height:700px)
               and (max-width: 1000px)
               and(min-width:650px){
