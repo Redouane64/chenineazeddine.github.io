@@ -595,9 +595,6 @@
 }
 
 @media only screen and (max-height: 420px) and (min-height: 50px) {
-  header {
-    background: red;
-  }
   header ul {
     margin: 15vh auto;
   }
