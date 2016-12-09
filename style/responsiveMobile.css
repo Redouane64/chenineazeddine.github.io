@@ -297,7 +297,7 @@
   }
 }
 
-@media only screen and (min-device-height: 300px) and (max-device-width: 700px) and (min-device-width: 530px) and (max-device-height: 700px) and (orientation: portrait), only screen and (max-width: 700px) and (min-width: 530px) and (max-height: 700px) and (min-height: 100px) {
+@media only screen and (min-device-height: 300px) and (max-device-width: 700px) and (min-device-width: 530px) and (max-device-height: 700px) and (orientation: portrait), only screen and (max-width: 700px) and (min-width: 530px) and (max-height: 700px) and (min-height: 300px) {
   header {
     width: 100vw;
     z-index: 5;
@@ -591,6 +591,31 @@
   footer > div div svg {
     width: 45px;
     height: 45px;
+  }
+}
+
+@media only screen and (max-height: 420px) and (min-height: 50px) {
+  header {
+    background: red;
+  }
+  header ul {
+    margin: 15vh auto;
+  }
+  header ul li {
+    margin: 2vh auto;
+  }
+  section article.block#hero {
+    height: 150vh;
+  }
+  section article.block#hero div#profile img {
+    height: 50vh;
+    width: 50vh;
+  }
+  section article.block#contactMe > div:first-child form input {
+    height: 20%;
+  }
+  section article.block#contactMe > div:first-child form textarea {
+    height: 80%;
   }
 }
 
@@ -902,7 +927,7 @@
   }
 }
 
-@media only screen and (min-device-height: 100px) and (max-device-width: 1000px) and (max-device-height: 800px) and (min-device-width: 650px) and (orientation: landscape), only screen and (min-height: 100px) and (max-height: 700px) and (max-width: 1000px) and (min-width: 650px) {
+@media only screen and (min-device-height: 400px) and (max-device-width: 1000px) and (max-device-height: 800px) and (min-device-width: 650px) and (orientation: landscape), only screen and (min-height: 400px) and (max-height: 700px) and (max-width: 1000px) and (min-width: 650px) {
   section article.block#hero {
     height: 100vh;
   }

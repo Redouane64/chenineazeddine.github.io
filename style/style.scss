@@ -573,7 +573,7 @@ footer{
     height:auto;
     background-color:  #E3E4DB;
     text-align: center ;
-    padding-bottom: 20px ;
+    padding: 40px 0px ;
     >div{
         width: 75% ;
         margin: auto ;
@@ -581,10 +581,11 @@ footer{
         flex-direction: row ;
         align-content: center; 
         align-items: center ;
-        height: 20vh ;
+        height: auto;
         overflow: visible;
         >div{
             margin: auto ;
+            margin-bottom: 20px ;
             @include leftSideIntro(5,0.1,0.1);
             overflow: visible ;
             a{ overflow: visible;} 

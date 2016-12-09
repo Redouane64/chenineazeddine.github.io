@@ -161,11 +161,9 @@ $(function(){
             if($order==5)  $target=$portfolio.find("footer"); else  $target=$portfolio.find("article").eq($order+2);
            $portfolio.animate({
                 scrollTop :""+$target.offset().top*0.9+"px",
-           },1000);
-      
-           
-        
+           },1000);      
     });
+    // fixing the keyboard probleme 
     
     
     

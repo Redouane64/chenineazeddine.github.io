@@ -836,7 +836,7 @@ footer {
   height: auto;
   background-color: #E3E4DB;
   text-align: center;
-  padding-bottom: 20px;
+  padding: 40px 0px;
 }
 
 footer > div {
@@ -846,12 +846,13 @@ footer > div {
   flex-direction: row;
   align-content: center;
   align-items: center;
-  height: 20vh;
+  height: auto;
   overflow: visible;
 }
 
 footer > div > div {
   margin: auto;
+  margin-bottom: 20px;
   opacity: 0;
   overflow: visible;
 }
