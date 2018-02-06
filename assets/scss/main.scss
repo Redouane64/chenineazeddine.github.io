@@ -580,7 +580,7 @@
 		@include vendor('justify-content', 'space-between');
 		background-color:		_palette(c_blue);
 		background-attachment:	scroll,								fixed;
-		background-image:				url('../../images/bg2.png');
+		background-image:			url('../../images/overlay.png'),	url('../../images/bg2.png');
 		background-position:	top left,							top left;
 		background-repeat:		repeat,								no-repeat;
 		background-size:		cover;
