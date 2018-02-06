@@ -1,0 +1,74 @@
+// Misc.
+	$misc: (
+		z-index-base:		10000
+	);
+
+// Duration.
+	$duration: (
+		transition:			0.2s
+	);
+
+// Size.
+	$size: (
+		border-radius:		0.35em,
+		element-height:		2.75em,
+		element-margin:		2em
+	);
+
+// Font.
+	$font: (
+		family:				('Roboto', sans-serif),
+		family-fixed:		('Roboto', monospace),
+		weight:				400,
+		weight-bold:		400
+	);
+
+// Palette.
+	$palette: (
+		c_red: #E56565,
+		c_brown: #3F3A34,
+		c_blue:#0E2A5B,
+		c_yellow:#FFCB57,
+		c_smoke: #FAFAFA,
+		c_dark_smoke:#F5F5F5,
+		c_grey:#95989A,
+		c_light_blue:#00B0FF,
+		c_black:#000000,
+		c_white: #ffffff,
+		c_light: rgba(255,255,255,0.5),
+		c_light_border: rgba(255,255,255,0.25),
+		c_light_brown: 	#a2a2a2,
+	
+
+
+		bg:					#fff,
+		fg:					#a2a2a2,
+		fg-bold:			#0E2A5B,
+		fg-light:			#3F3A34,
+		border:				#efefef,
+		border-bg:			#f7f7f7,
+		border2:			#dfdfdf,
+		border2-bg:			#e7e7e7,
+
+		accent1: (
+			bg:				#49bf9d,
+			fg:				mix(#49bf9d, #ffffff, 25%),
+			fg-bold:		#ffffff,
+			fg-light:		mix(#49bf9d, #ffffff, 40%),
+			border:			rgba(255,255,255,0.25),
+			border-bg:		rgba(255,255,255,0.075),
+			border2:		rgba(255,255,255,0.5),
+			border2-bg:		rgba(255,255,255,0.2)
+		),
+
+		accent2: (
+			bg:				#0E2A5B,
+			fg:				rgba(255,255,255,0.5),
+			fg-bold:		#ffffff,
+			fg-light:		rgba(255,255,255,0.4),
+			border:			rgba(255,255,255,0.25),
+			border-bg:		rgba(255,255,255,0.075),
+			border2:		rgba(255,255,255,0.5),
+			border2-bg:		rgba(255,255,255,0.2)
+		)
+	);
