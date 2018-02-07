@@ -1,8 +1,11 @@
 *{
     overflow-x: hidden;
+    overflow-y: visible;
 }
 #acadimic_path{
    div{
+    overflow-x: hidden;
+    overflow-y: visible;
        &.row{
            margin-top: 20px;
        }

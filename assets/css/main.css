@@ -1832,17 +1832,19 @@ body.is-touch .poptrox-popup .closer {
     padding-left: 0; } }
 
 * {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  overflow-y: visible; }
 
-#acadimic_path div.row {
-  margin-top: 20px; }
-
-#acadimic_path div strong {
-  font-weight: 400;
-  color: #3F3A34; }
-
-#acadimic_path div span {
-  font-weight: 300; }
+#acadimic_path div {
+  overflow-x: hidden;
+  overflow-y: visible; }
+  #acadimic_path div.row {
+    margin-top: 20px; }
+  #acadimic_path div strong {
+    font-weight: 400;
+    color: #3F3A34; }
+  #acadimic_path div span {
+    font-weight: 300; }
 
 #my_interests .figure {
   height: 120px; }
